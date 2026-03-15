@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+background: #3e35f0;
+background: linear-gradient(90deg, rgba(62, 53, 240, 1) 0%, rgba(191, 191, 219, 1) 63%, rgba(0, 212, 255, 1) 100%);
+}
+
+.wind-angle {
+    display: inline-block; 
+    font-size: 2rem;       
+    transition: transform 0.5s ease; 
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(20px); }
+    75% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.4s ease-in-out;
+    color: red !important;
+}
